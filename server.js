@@ -1,6 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
+const htmlRoutes = require("./app/routing/htmlRoutes");
+const apiRoutes = require("./app/routing/apiRoutes");
 
 // Sets up the Express App
 // =============================================================
@@ -12,7 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Need to put something here to connect to htmlRoutes.js and apiRoutes.js
-
+app.use(htmlRoutes);
+app.use(apiRoutes);
 
 // Starts the server to begin listening
 // =============================================================
