@@ -37,7 +37,7 @@
 
         <h3><strong>Question 1</strong></h3>
         <h4>You enjoy outside activities.</h4>
-        <select data-placeholder="" class="chosen-select" id="q1">
+        <select data-placeholder="How do you feel?" class="chosen-select" id="q1">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -48,7 +48,7 @@
 
         <h3><strong>Question 2</strong></h3>
         <h4>You are comfortable talking in front of large crowds.</h4>
-        <select data-placeholder="" class="chosen-select" id="q2">
+        <select data-placeholder="Pick one" class="chosen-select" id="q2">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -60,7 +60,7 @@
 
         <h3><strong>Question 3</strong></h3>
         <h4>You are not afraid to get down and dirty to reach your goals.</h4>
-        <select data-placeholder="" class="chosen-select" id="q3">
+        <select data-placeholder="Does it really matter?" class="chosen-select" id="q3">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -72,7 +72,7 @@
 
         <h3><strong>Question 4</strong></h3>
         <h4>You like to spend that night hanging out with friends.</h4>
-        <select data-placeholder="" class="chosen-select" id="q4">
+        <select data-placeholder="Keep going" class="chosen-select" id="q4">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -84,7 +84,7 @@
 
         <h3><strong>Question 5</strong></h3>
         <h4>You like to obtain material items over experiences.</h4>
-        <select data-placeholder="" class="chosen-select" id="q5">
+        <select data-placeholder="There are more after this" class="chosen-select" id="q5">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -96,7 +96,7 @@
 
         <h3><strong>Question 6</strong></h3>
         <h4>You like to dress up for special occasions.</h4>
-        <select data-placeholder="" class="chosen-select" id="q6">
+        <select data-placeholder="Try again" class="chosen-select" id="q6">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -108,7 +108,7 @@
 
         <h3><strong>Question 7</strong></h3>
         <h4>You don't mind when other people do the talking.</h4>
-        <select data-placeholder="" class="chosen-select" id="q7">
+        <select data-placeholder="Yep" class="chosen-select" id="q7">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -119,7 +119,7 @@
 
         <h3><strong>Question 8</strong></h3>
         <h4>You like traveling around the world.</h4>
-        <select data-placeholder="" class="chosen-select" id="q8">
+        <select data-placeholder="Ugh." class="chosen-select" id="q8">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -130,7 +130,7 @@
 
         <h3><strong>Question 9</strong></h3>
         <h4>You like to keep in touch with your friends.</h4>
-        <select data-placeholder="" class="chosen-select" id="q9">
+        <select data-placeholder="Almost there..." class="chosen-select" id="q9">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -141,7 +141,7 @@
 
         <h3><strong>Question 10</strong></h3>
         <h4>You feel more energetic after spending time with a group of people.</h4>
-        <select data-placeholder="" class="chosen-select" id="q10">
+        <select data-placeholder="Last one." class="chosen-select" id="q10">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -159,7 +159,11 @@
         <hr>
         <footer class="footer">
             <div class="container">
-                <p><a href="/api/friends">API Friends List</a>
+                <p>
+									<a href="/api/friends">API Friends List</a>
+									|
+									<a href="/">Home</a>
+                </p>
             </div>
         </footer>
 
@@ -173,11 +177,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h2 class="modal-title"><strong>Best Match....is Against!</strong></h2>
+                    <h2 class="modal-title"><strong>Here's your best match</strong></h2>
                 </div>
                 <div class="modal-body">
                     <h2 id="matchName"></h2>
-                    <img id="matchImg" class="img-responsive" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+                    <img id="matchImg" class="img-responsive" src="https://avatars3.githubusercontent.com/u/32380985?s=460&v=4" alt="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -198,7 +202,7 @@
                 disable_search_threshold: 10
             },
             '.chosen-select-no-results': {
-                no_results_text: 'Oops, nothing found!'
+                no_results_text: "Wow, that sucks. You don't match anyone!"
             },
             '.chosen-select-width': {
                 width: "95%"
